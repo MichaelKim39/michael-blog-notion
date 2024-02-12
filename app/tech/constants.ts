@@ -55,8 +55,8 @@ export const TECHNOLOGIES = {
       icons: [NextJsIcon],
       experience: TECH_PROFICIENCY.PRODUCTION,
     },
-    { name: "Gatsby JS", icons: [GatsbyIcon] },
-    { name: "SvelteKit", icons: [SveltekitIcon] },
+    // { name: "Gatsby JS", icons: [GatsbyIcon] },
+    // { name: "SvelteKit", icons: [SveltekitIcon] },
   ],
   MOBILE: [
     {
@@ -64,15 +64,15 @@ export const TECHNOLOGIES = {
       icons: [ReactNativeIcon, ExpoIcon],
       experience: TECH_PROFICIENCY.PRODUCTION,
     },
-    { name: "Ionic with Capacitor", icons: [IonicIcon, CapacitorIcon] },
-    { name: "Android", icons: [AndroidIcon] },
+    // { name: "Ionic with Capacitor", icons: [IonicIcon, CapacitorIcon] },
+    // { name: "Android", icons: [AndroidIcon] },
   ],
   BACKEND: [
-    {
-      name: "Django",
-      icons: [DjangoIcon],
-      experience: TECH_PROFICIENCY.PRODUCTION,
-    },
+    // {
+    //   name: "Django",
+    //   icons: [DjangoIcon],
+    //   experience: TECH_PROFICIENCY.PRODUCTION,
+    // },
     {
       name: "Nest JS",
       icons: [NestJsIcon],
@@ -86,11 +86,11 @@ export const TECHNOLOGIES = {
     { name: "Firebase", icons: [FirebaseIcon] },
   ],
   DATABASES: [
-    {
-      name: "Postgres",
-      icons: [PostgresIcon],
-      experience: TECH_PROFICIENCY.PRODUCTION,
-    },
+    // {
+    //   name: "Postgres",
+    //   icons: [PostgresIcon],
+    //   experience: TECH_PROFICIENCY.PRODUCTION,
+    // },
     {
       name: "DynamoDB",
       icons: [DynamoDbIcon],
@@ -114,11 +114,11 @@ export const TECHNOLOGIES = {
       icons: [DockerIcon],
       experience: TECH_PROFICIENCY.PRODUCTION,
     },
-    {
-      name: "Terraform",
-      icons: [TerraformIcon],
-      experience: TECH_PROFICIENCY.PRODUCTION,
-    },
+    // {
+    //   name: "Terraform",
+    //   icons: [TerraformIcon],
+    //   experience: TECH_PROFICIENCY.PRODUCTION,
+    // },
   ],
   DEVELOPMENT: [
     {

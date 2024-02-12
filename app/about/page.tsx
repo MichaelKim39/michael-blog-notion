@@ -1,40 +1,30 @@
 import { PageTitle } from "components/common/PageTitle";
 import Image from "next/image";
-import Link from "next/link";
-import about from "/public/about.jpg";
+import about from "/public/about.jpeg";
 
 export default function About() {
   return (
     <div className="flex flex-col px-8">
       <PageTitle>
-        Hey! I{`'`}m Albert Einstein
+        Hey! I{`'`}m Michael
         <span className="inline-block ml-2 animate-waving-hand">👋</span>
       </PageTitle>
       <div className="grid grid-cols-1 sm:grid-cols-2 w-100 ltr justify-center flex-wrap">
         <div className="flex flex-col justify-evenly align-middle text-xl">
           <p className="py-2">
-            I{`'`}m a German-born theoretical physicist, widely acknowledged to
-            be one of the greatest and most influential physicists of all time.
+            I{`'`}m a web and mobile developer currently working at Theodo UK. I
+            like bouldering, photography, reading, eating, oversize clothing and
+            playing the guitar. My spirit animal is Snorlax.
           </p>
           <p className="py-2">
-            Currently, I{`'`}m working as an{" "}
-            <span className="font-semibold">Assistant Examiner</span> evaluating
-            patent applications at the{" "}
-            <Link
-              className="font-semibold"
-              href="https://en.wikipedia.org/wiki/Swiss_Federal_Institute_of_Intellectual_Property"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Swiss Patent Office
-            </Link>
-            .
+            My mission in life is to solve social media. In 2020, I co-founded a
+            startup called 0Regrets that aimed to help people live fulfilling
+            lives filled with intention.
           </p>
           <p className="py-2">
-            <span className="font-semibold">Fun Fact:</span> In 1905, I
-            published 4 papers which all provided a major contribution to modern
-            Physics today, including my famous{" "}
-            <span className="font-semibold">E = mc²</span>!
+            I{`'`}m focussing on upskilling technically now, but I{`'`}ve never
+            stopped working towards my goal of developing a social media that is
+            productive and energising!
           </p>
         </div>
         <div className="relative sm:order-none order-first w-100 sm:w-72 h-96 overflow-hidden rounded-lg m-5 hover:scale-[1.02] transition-all hover:shadow-xl">

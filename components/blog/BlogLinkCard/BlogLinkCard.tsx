@@ -34,7 +34,7 @@ export const BlogLinkCard: FC<BlogLinkCardProps> = ({
         )}
       </div>
       <p className="text-gray-600 dark:text-gray-400">{summary}</p>
-      <hr className="my-4 border-gray-500" />
+      <hr className="my-6 border-gray-500" />
     </Link>
   );
 };

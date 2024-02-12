@@ -2,19 +2,17 @@ import Image from "next/image";
 import Link from "next/link";
 import { BlogHighlightCard } from "components/home/BlogHighlightCard";
 import avatar from "/public/me.png";
-import { ArrowRightIcon } from "icons/arrow-right";
-import { PATHS } from "./constants";
 
 export default function Home() {
   return (
-    <div className="px-8">
+    <div className="px-8 py-10">
       <div className="flex sm:flex-row flex-col-reverse justify-between">
         <div className="flex flex-col justify-top align-top mb-8 sm:mb-24 text-center sm:text-left">
           <h1 className="font-bold text-2xl md:text-4xl mb-8 tracking-tight text-gray-700 dark:text-white">
-            {`Michael Kim`}
+            {`🐼 Michael Kim`}
           </h1>
-          <h2 className="text-gray-700 dark:text-gray-200 md:text-xl text-xl">
-            {`Full Stack Developer`} at{" "}
+          <h2 className="text-gray-700 dark:text-gray-200 md:text-xl text-xl mb-3">
+            {`💻 Full Stack Developer`} at{" "}
             <Link
               className="font-semibold"
               href="https://www.theodo.co.uk/"
@@ -25,10 +23,11 @@ export default function Home() {
             </Link>
           </h2>
           <p className="text-gray-600 dark:text-gray-400 text-base">
-            {`I want to help people live with intention`}
+            {`My mission in life is to help people to lead fulfilling
+            lives filled with intention - my dream is to build a healthy social media that is both energising and productive, that will enable users to make a positive difference in the world`}
           </p>
         </div>
-        <div className="relative mx-auto w-[225px] h-[225px] overflow-hidden rounded-full m-5 hover:scale-[1.05] transition-all hover:shadow-xl shadow-md">
+        <div className="relative ml-10 min-w-[225px] h-[225px] overflow-hidden rounded-full my-5 hover:scale-[1.05] transition-all hover:shadow-xl shadow-md">
           <Image
             alt="me"
             src={avatar}
@@ -39,12 +38,12 @@ export default function Home() {
         </div>
       </div>
       <h3 className="font-bold text-2xl md:text-4xl tracking-tight my-6">
-        Articles
+        Highlights
       </h3>
       <div className="flex gap-6 flex-col md:flex-row overflow-hidden pb-4">
         <BlogHighlightCard
-          slug="YYYY-MM-DD/slug"
-          title="Article title"
+          slug="2023-02-06/should-we-use-enums"
+          title="Are Enums Really Harmful?"
           gradient="from-gray-700 to-gray-300"
         />
         <BlogHighlightCard
@@ -58,21 +57,6 @@ export default function Home() {
           gradient="from-gray-700 to-gray-300"
         />
       </div>
-      <Link className="flex text-lg justify-end" href={PATHS.BLOG}>
-        More Articles{" "}
-        <span className="my-auto">
-          <ArrowRightIcon width={20} height={20} />
-        </span>
-      </Link>
-      <hr className="my-4 border-b-2" />
-
-      <Link className="flex text-lg justify-end" href={PATHS.RESOURCES}>
-        {`More Resources`}{" "}
-        <span className="my-auto">
-          <ArrowRightIcon width={20} height={20} />
-        </span>
-      </Link>
-      <hr className="my-4 border-b-2" />
     </div>
   );
 }

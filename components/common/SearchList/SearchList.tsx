@@ -26,8 +26,8 @@ export const SearchList = <T,>({
   }, [fetchData, query]);
 
   return (
-    <div>
-      <div className="sticky top-20 w-full pb-2 z-10 bg-white dark:bg-gray-900">
+    <>
+      <div className="sticky top-20 w-full mb-5 z-10 bg-white dark:bg-gray-900">
         <div className="flex sm:flex-row flex-col">
           <div className="relative w-full">
             <input
@@ -47,6 +47,6 @@ export const SearchList = <T,>({
           <ListItem key={keyExtractor(element)} {...element} />
         ))}
       </div>
-    </div>
+    </>
   );
 };

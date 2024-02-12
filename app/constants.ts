@@ -1,4 +1,3 @@
-
 import { NavItemPops } from "components/common/Navbar/NavItem";
 
 // NEEDS UPDATING BASED ON PAGES GENERATED
@@ -19,7 +18,7 @@ export const NAVBAR_ITEMS: NavItemPops[] = [
   },
   {
     href: PATHS.ABOUT,
-    label: "About Me",
+    label: "About",
   },
   {
     href: PATHS.BLOG,
@@ -27,6 +26,6 @@ export const NAVBAR_ITEMS: NavItemPops[] = [
   },
   {
     href: PATHS.JOURNAL,
-    label: "Dev Journal",
+    label: "Journal",
   },
 ];
