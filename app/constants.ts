@@ -33,5 +33,3 @@ export const NAVBAR_ITEMS: NavItemProps[] = [
     label: "Photos",
   },
 ];
-
-export const NO_FOOTER_PATHS = [PATHS.PHOTOS];

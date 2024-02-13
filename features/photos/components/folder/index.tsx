@@ -3,9 +3,9 @@ import Draggable, { ControlPosition } from "react-draggable";
 import folder from "/public/folder.png";
 import Image from "next/image";
 
-type FolderProps = {
+export type FolderProps = {
   title: string;
-  startPos: ControlPosition;
+  startPos: ControlPosition | undefined;
 };
 
 const Folder = ({ title, startPos }: FolderProps) => {
@@ -27,17 +27,16 @@ const Folder = ({ title, startPos }: FolderProps) => {
   return (
     // @ts-expect-error Temporary testing
     <Draggable defaultPosition={startPos} onStart={onStart} onStop={onStop}>
-      <div className="absolute flex flex-col h-[150px] w-[150px]">
-        <div className="relative sm:order-none order-first w-100 sm:w-72 h-96 overflow-hidden rounded-lg m-5 hover:scale-[1.02] transition-all hover:shadow-xl">
+      <div className="absolute h-[150px] w-[150px] z-50">
+        <div className="hover:scale-[1.02] transition-all hover:shadow-xl">
           <Image
-            className="object-cover transition-all pointer-events-none"
+            className="pointer-events-none"
             src={folder}
-            alt="me"
+            alt="folder"
             placeholder="blur"
-            fill
           />
         </div>
-        <p className="text-base mt-3 text-center">{title}</p>
+        <p className="text-base text-center">{title}</p>
       </div>
     </Draggable>
   );
