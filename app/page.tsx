@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { BlogHighlightCard } from "components/home/BlogHighlightCard";
+import { BlogHighlightCard } from "features/home/components/BlogHighlightCard";
 import avatar from "/public/me.png";
 
 export default function Home() {

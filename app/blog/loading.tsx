@@ -1,4 +1,4 @@
-import { BlogLoadingState } from "components/blog/BlogLoadingState";
+import { BlogLoadingState } from "features/blog/components/BlogLoadingState";
 
 export default function BlogLoading() {
   return <BlogLoadingState />;

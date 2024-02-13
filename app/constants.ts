@@ -1,7 +1,6 @@
-import { NavItemPops } from "components/common/Navbar/NavItem";
+import { NavItemProps } from "components/Navbar/NavItem";
 
 // NEEDS UPDATING BASED ON PAGES GENERATED
-
 export const PATHS = {
   HOME: "/",
   ABOUT: "/about",
@@ -9,9 +8,10 @@ export const PATHS = {
   JOURNAL: "/journal",
   TECH: "/tech",
   RESOURCES: "/resources",
+  PHOTOS: "/photos",
 };
 
-export const NAVBAR_ITEMS: NavItemPops[] = [
+export const NAVBAR_ITEMS: NavItemProps[] = [
   {
     href: PATHS.HOME,
     label: "Home",
@@ -28,4 +28,10 @@ export const NAVBAR_ITEMS: NavItemPops[] = [
     href: PATHS.JOURNAL,
     label: "Journal",
   },
+  {
+    href: PATHS.PHOTOS,
+    label: "Photos",
+  },
 ];
+
+export const NO_FOOTER_PATHS = [PATHS.PHOTOS];

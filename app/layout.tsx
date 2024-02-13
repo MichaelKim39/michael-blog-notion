@@ -1,13 +1,15 @@
 import { FC, ReactNode } from "react";
+import { headers } from "next/headers";
 import { ThemeProvider } from "styles/ThemeProvider";
-import { Navbar } from "components/common/Navbar";
-import { Footer } from "components/common/Footer";
+import { Navbar } from "components/Navbar";
+import { Footer } from "components/Footer";
 import "styles/globals.css";
 
 // Notion CSS
 import "react-notion-x/src/styles.css";
 import "katex/dist/katex.min.css";
 import "prismjs/themes/prism-tomorrow.css";
+import { NO_FOOTER_PATHS } from "./constants";
 
 type RootPageProps = { children: ReactNode };
 

@@ -1,4 +1,4 @@
-import { PageTitle } from "components/common/PageTitle";
+import { PageTitle } from "components/PageTitle";
 import Image from "next/image";
 import about from "/public/about.jpeg";
 
@@ -9,9 +9,9 @@ export default function About() {
         Hey! I{`'`}m Michael
         <span className="inline-block ml-2 animate-waving-hand">👋</span>
       </PageTitle>
-      <div className="grid grid-cols-1 sm:grid-cols-2 w-100 ltr justify-center flex-wrap">
+      <div className="grid grid-cols-1 sm:grid-cols-2 w-full ltr justify-center flex-wrap py-5">
         <div className="flex flex-col justify-evenly align-middle text-xl">
-          <p className="py-2">
+          <p className="pb-2">
             I{`'`}m a web and mobile developer currently working at Theodo UK. I
             like bouldering, photography, reading, eating, oversize clothing and
             playing the guitar. My spirit animal is Snorlax.
