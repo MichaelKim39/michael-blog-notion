@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { BlogHighlightCard } from "features/home/components/BlogHighlightCard";
 import avatar from "/public/me.png";
-import { Footer } from "components/Footer";
 
 export default function Home() {
   return (
@@ -42,25 +41,14 @@ export default function Home() {
         <h3 className="font-bold text-2xl md:text-4xl tracking-tight my-6">
           Highlights
         </h3>
-        <div className="flex gap-6 flex-col md:flex-row overflow-hidden pb-4">
+        <div className="grid grid-cols-3 gap-4">
           <BlogHighlightCard
             slug="2023-02-06/should-we-use-enums"
-            title="Are Enums Really Harmful?"
-            gradient="from-gray-700 to-gray-300"
-          />
-          <BlogHighlightCard
-            slug="YYYY-MM-DD/slug"
-            title="Article title"
-            gradient="from-gray-300 to-gray-500"
-          />
-          <BlogHighlightCard
-            slug="YYYY-MM-DD/slug"
-            title="Article title"
+            title="Are TS Enums Really Harmful?"
             gradient="from-gray-700 to-gray-300"
           />
         </div>
       </div>
-      <Footer />
     </>
   );
 }

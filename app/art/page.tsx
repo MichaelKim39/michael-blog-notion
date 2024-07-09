@@ -1,9 +1,9 @@
 "use client";
 
-import Folder from "features/photos/components/folder";
-import { useFolder } from "features/photos/hooks/useFolder";
+import Folder from "features/art/components/folder";
+import { useFolder } from "features/art/hooks/useFolder";
 
-export default function Photos() {
+export default function Art() {
   const { folders } = useFolder();
 
   return (

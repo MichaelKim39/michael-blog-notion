@@ -7,6 +7,7 @@ import "styles/globals.css";
 import "react-notion-x/src/styles.css";
 import "katex/dist/katex.min.css";
 import "prismjs/themes/prism-tomorrow.css";
+import { Footer } from "components/Footer";
 
 type RootPageProps = { children: ReactNode };
 
@@ -21,6 +22,7 @@ const RootLayout: FC<RootPageProps> = ({ children }) => {
             {children}
           </div>
         </ThemeProvider>
+        <Footer />
       </body>
     </html>
   );

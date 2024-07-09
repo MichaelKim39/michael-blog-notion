@@ -8,7 +8,7 @@ export const PATHS = {
   JOURNAL: "/journal",
   TECH: "/tech",
   RESOURCES: "/resources",
-  PHOTOS: "/photos",
+  ART: "/art",
 };
 
 export const NAVBAR_ITEMS: NavItemProps[] = [
@@ -29,7 +29,7 @@ export const NAVBAR_ITEMS: NavItemProps[] = [
     label: "Journal",
   },
   {
-    href: PATHS.PHOTOS,
-    label: "Photos",
+    href: PATHS.ART,
+    label: "Art",
   },
 ];
